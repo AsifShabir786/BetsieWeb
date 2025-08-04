@@ -32,7 +32,7 @@ export default function Home() {
 
     try {
       // Use environment variable for API URL, fallback to localhost for development
-      const apiUrl = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3000"
+      const apiUrl ="http://localhost:3000"
 
       const response = await fetch(`${apiUrl}/users/reset-password`, {
         method: "POST",
